@@ -1,0 +1,25 @@
+body {
+    /* background-color: aqua; */
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.container .container {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+}

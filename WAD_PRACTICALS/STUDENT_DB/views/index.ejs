@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class="container p-5">
+      <h1 class="fw-bold">STUDENT DATABASE :</h1>
+      <hr />
+      <h4>
+        Total number of documents in database is : <%=
+        Object.keys(studentsList).length; %>
+      </h4>
+      <hr />
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Roll_No</th>
+            <th>Name</th>
+            <th>WAD_Marks</th>
+            <th>CC_Marks</th>
+            <th>DSBDA_Marks</th>
+            <th>CNS_Marks</th>
+            <th>AI_Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% studentsList.forEach(student => {%>
+          <tr>
+            <td><%= student.Roll_No %></td>
+            <td><%= student.Name %></td>
+            <td><%= student.WAD_Marks %></td>
+            <td><%= student.CC_Marks %></td>
+            <td><%= student.DSBDA_Marks %></td>
+            <td><%= student.CNS_Marks %></td>
+            <td><%= student.AI_Marks %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.text {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main {
+    background-color: rgba(144, 158, 170, 0.424);
+    background-image: url("3.jpg"); 
+    background-size: cover;
+}
+
+
+
+
